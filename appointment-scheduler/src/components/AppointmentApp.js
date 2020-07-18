@@ -134,9 +134,11 @@ class AppointmentApp extends Component {
           const dateString = moment(slot_date, "YYYY-DD-MM").format(
             "YYYY-DD-MM"
           );
+          // eslint-disable-next-line
           !currentSchedule[slot_date]
             ? (currentSchedule[dateString] = Array(8).fill(false))
             : null;
+            // eslint-disable-next-line
           Array.isArray(currentSchedule[dateString])
             ? (currentSchedule[dateString][slot_time] = true)
             : null;
@@ -145,6 +147,7 @@ class AppointmentApp extends Component {
 
     for (let day in schedule) {
       let slots = schedule[day];
+      // eslint-disable-next-line
       slots.length
         ? slots.every(slot => slot === true) ? (schedule[day] = true) : null
         : null;
@@ -429,7 +432,7 @@ class AppointmentApp extends Component {
                           })
                         }
                         disabled={!contactFormFilled || data.processed}
-                        style={{ marginTop: 20, maxWidth: 100 }}
+                        style={{ marginTop: 20, maxWidth: 100}}
                       />
                     </section>
                   </p>
