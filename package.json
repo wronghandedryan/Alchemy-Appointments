@@ -4,8 +4,13 @@
   "description": "An appointment scheduler react web app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon start /api/app.js &&  start /appointment-scheduler/run-start-scripts"
   },
   "author": "Kohwo Orien",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express-router": "0.0.1",
+    "nodemon": "^2.0.4"
+  }
 }
