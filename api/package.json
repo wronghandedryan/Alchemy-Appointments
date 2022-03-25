@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -18,7 +20,9 @@
     "morgan": "^1.9.1",
     "nexmo": "^2.8.0",
     "nodemon": "^1.12.1",
-    "serve-favicon": "~2.4.5"
+    "serve-favicon": "~2.4.5",
+    "@snyk/protect": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
