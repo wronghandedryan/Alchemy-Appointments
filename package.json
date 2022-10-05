@@ -9,8 +9,8 @@
   "author": "Kohwo Orien",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.3",
     "express-router": "0.0.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.17"
   }
 }
